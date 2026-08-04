@@ -1,0 +1,4 @@
+/ Interfaz que define el contrato para productos a los que se le puede aplicar descuento 
+public interface Descontable {
+    void aplicarDescuento(double porcentaje);
+}

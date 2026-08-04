@@ -1,0 +1,32 @@
+// Clase abstracta base que representa la estructura general de cualquier producto.
+// Demuestra el concepto de Herencia al ser la clase padre.
+public abstract class Producto {
+    private String id;
+    private String nombre;
+    private double precioBase; 
+
+    public Producto(String id, String nombre, double precioBase) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precioBase = precioBase;
+}
+
+public String getId() { 
+    return id; 
+}
+public String getNombre() { 
+    return nombre; 
+}
+public double getprecioBase() { 
+    return precioBase; 
+}
+public void setprecioBase(double precioBase) {
+    this.precioBase = precioBase; 
+}
+
+public abstract double calcularPrecioFinal() ;
+
+public void mostrarDetalles() {
+    System.out.println("ID:" + id + " | Nombre: " + nombre + " | Precio Base: $" + precioBase);
+    }
+}
